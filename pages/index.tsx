@@ -678,6 +678,15 @@ export default function Home() {
                       content={result.advice.reason}
                       className="bg-slate-50 border-slate-200"
                     />
+                    {/* Detailed Advice */}
+                    <div className={`p-4 rounded-xl border ${config.borderColor} ${config.bgLight}`}>
+                      <p className={`text-xs font-bold uppercase tracking-wider ${config.textColor} mb-2`}>
+                        📝 パーソナライズ詳細アドバイス
+                      </p>
+                      <p className="text-slate-700 text-sm leading-relaxed whitespace-pre-line">
+                        {result.advice.detailedAdvice}
+                      </p>
+                    </div>
                   </div>
                 </div>
 
